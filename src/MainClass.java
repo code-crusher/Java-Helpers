@@ -23,8 +23,15 @@ public class MainClass {
 
         listHelper.printList(listHelper.head);
 
-        //  listHelper.deleteNodeKey(1);
-        listHelper.deleteNodePosition(3);
+        //listHelper.deleteNodeKey(1);
+        //listHelper.deleteNodePosition(3);
+
+        System.out.println("The list has " + listHelper.length() + " nodes.");
+
+        listHelper.swap(1, 0);
+
+        listHelper.printList(listHelper.head);
+
     }
 
 }
