@@ -4,12 +4,17 @@
 
 public class MainClass {
 
+
     public static void main(String[] args) {
 
-        LinkedListHelper.ListNode listNode = new LinkedListHelper.ListNode(0);
+        int headVal = 0;
+        int secVal = 1;
 
+        LinkedListHelper listHelper = new LinkedListHelper(headVal);
 
+        LinkedListHelper.ListNode secNode = listHelper.makeNode(secVal);
 
+        listHelper.addNode(listHelper.head, secNode);
     }
 
 }

@@ -15,4 +15,18 @@ class LinkedListHelper {
         }
     }
 
+    // constructor
+    public LinkedListHelper(int headVal) {
+        head = new ListNode(headVal);
+    }
+
+    // add nodes
+    public void addNode(ListNode currNode, ListNode nextNode) {
+        currNode.next = nextNode;
+    }
+
+    // make new nodes
+    public ListNode makeNode(int value) {
+        return new ListNode(value);
+    }
 }
