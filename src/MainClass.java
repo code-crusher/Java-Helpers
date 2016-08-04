@@ -4,7 +4,6 @@
 
 public class MainClass {
 
-
     public static void main(String[] args) {
 
         int headVal = 0;
@@ -17,12 +16,15 @@ public class MainClass {
 
         LinkedListHelper.ListNode thirdNode = listHelper.makeNode(thirdVal);
 
-        listHelper.addHead(thirdNode);
+        //  listHelper.addHead(thirdNode);
 
         listHelper.addNode(listHelper.head, secNode);
+        listHelper.addNode(secNode, thirdNode);
 
         listHelper.printList(listHelper.head);
 
+        //  listHelper.deleteNodeKey(1);
+        listHelper.deleteNodePosition(3);
     }
 
 }
