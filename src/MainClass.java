@@ -30,6 +30,7 @@ public class MainClass {
 
         listHelper.swap(1, 0);
 
+        listHelper.reverse();
         listHelper.printList(listHelper.head);
 
     }

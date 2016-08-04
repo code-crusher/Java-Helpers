@@ -112,7 +112,7 @@ public class LinkedListHelper {
 
         if (val1 == val2)
             return;
-        
+
         while (temp1 != null && temp1.data != val1) {
             prev1 = temp1;
             temp1 = temp1.next;
@@ -146,5 +146,18 @@ public class LinkedListHelper {
         temp3 = temp2.next;
         temp2.next = temp1.next;
         temp1.next = temp3;
+    }
+
+    // reverse list
+    public void reverse() {
+        ListNode node = head, prev = null, next;
+
+        while (node != null) {
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+        head = prev;
     }
 }
